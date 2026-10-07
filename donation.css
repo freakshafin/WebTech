@@ -16,12 +16,10 @@ body {
     margin: 0 auto;
 }
 
-/* Required marker */
 .req {
     color: #e00000;
 }
 
-/* Top notes */
 .required-note {
     margin: 0 0 12px;
     font-size: 10px;
@@ -37,7 +35,6 @@ body {
     margin-right: 14px;
 }
 
-/* Red section headings */
 h3 {
     margin: 16px 0 6px;
     color: #e00000;
@@ -46,7 +43,6 @@ h3 {
     font-weight: bold;
 }
 
-/* One row = label on the left, field on the right */
 .row {
     display: grid;
     grid-template-columns: 165px 1fr;
@@ -68,7 +64,6 @@ h3 {
     line-height: 1.2;
 }
 
-/* Inputs */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -103,7 +98,6 @@ textarea {
     resize: vertical;
 }
 
-/* Radio / checkbox groups */
 .inline-group,
 .stack-group {
     font-size: 11px;
@@ -127,7 +121,6 @@ input[type="checkbox"] {
     vertical-align: middle;
 }
 
-/* Monthly credit card line */
 .monthly {
     margin-top: 6px;
     display: flex;
@@ -140,7 +133,6 @@ input.tiny {
     width: 34px;
 }
 
-/* Notes and full-width checkbox lines */
 .note {
     margin: 4px 0 6px;
     font-size: 11px;
@@ -156,7 +148,6 @@ input.tiny {
     margin-right: 8px;
 }
 
-/* Buttons */
 .buttons {
     margin: 8px 0 12px 2px;
 }
@@ -175,7 +166,7 @@ input.tiny {
     background: linear-gradient(#f4f4f4, #cfcfcf);
 }
 
-/* Footer */
+
 .secure,
 .help {
     margin: 6px 0;
@@ -186,7 +177,7 @@ input.tiny {
     color: #888;
 }
 
-/* Small screens: stack the label above the field */
+
 @media (max-width: 480px) {
     .row {
         grid-template-columns: 1fr;
