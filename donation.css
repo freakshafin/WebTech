@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 10px;
+    background: #fff;
+    color: #222;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    font-size: 11px;
+}
+
+.page {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+/* Required marker */
+.req {
+    color: #e00000;
+}
+
+/* Top notes */
+.required-note {
+    margin: 0 0 12px;
+    font-size: 10px;
+}
+
+.steps {
+    margin: 0 0 14px;
+    font-size: 10px;
+}
+
+.steps span,
+.steps strong {
+    margin-right: 14px;
+}
+
+/* Red section headings */
+h3 {
+    margin: 16px 0 6px;
+    color: #e00000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* One row = label on the left, field on the right */
+.row {
+    display: grid;
+    grid-template-columns: 165px 1fr;
+    column-gap: 6px;
+    align-items: start;
+    margin-bottom: 6px;
+}
+
+.row > label {
+    text-align: right;
+    font-weight: bold;
+    padding-top: 3px;
+}
+
+.row > label small {
+    display: block;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 1.2;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 2px 3px;
+    font-family: inherit;
+    font-size: 11px;
+    border: 1px solid #777;
+    background: #fff;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #6c9bd8;
+    outline-offset: 0;
+}
+
+.select-small {
+    width: 100px;
+}
+
+.select-wide {
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Radio / checkbox groups */
+.inline-group,
+.stack-group {
+    font-size: 11px;
+}
+
+.opt {
+    display: inline-block;
+    margin-right: 4px;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+.stack-group .opt {
+    display: block;
+    margin: 0 0 2px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 2px 0 0;
+    vertical-align: middle;
+}
+
+/* Monthly credit card line */
+.monthly {
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+input.tiny {
+    width: 34px;
+}
+
+/* Notes and full-width checkbox lines */
+.note {
+    margin: 4px 0 6px;
+    font-size: 11px;
+}
+
+.check-line {
+    display: block;
+    margin: 0 0 6px 2px;
+    font-weight: normal;
+}
+
+.check-line input {
+    margin-right: 8px;
+}
+
+/* Buttons */
+.buttons {
+    margin: 8px 0 12px 2px;
+}
+
+.buttons input {
+    padding: 1px 12px;
+    font-family: inherit;
+    font-size: 11px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    background: linear-gradient(#fff, #ddd);
+    cursor: pointer;
+}
+
+.buttons input:hover {
+    background: linear-gradient(#f4f4f4, #cfcfcf);
+}
+
+/* Footer */
+.secure,
+.help {
+    margin: 6px 0;
+    font-size: 10px;
+}
+
+.help a {
+    color: #888;
+}
+
+/* Small screens: stack the label above the field */
+@media (max-width: 480px) {
+    .row {
+        grid-template-columns: 1fr;
+    }
+
+    .row > label {
+        text-align: left;
+    }
+}
