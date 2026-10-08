@@ -1,0 +1,44 @@
+body {
+    margin: 120px auto;
+    max-width: 1720px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+form {
+    background: #e6e6e6;
+    padding: 222px;
+    border: 1px solid #999;
+}
+h2 {
+    font-size: 55px;
+    border-bottom:#999;
+    padding-bottom: 2;
+    margin-top: 25px;
+    margin-bottom: 8px;
+    color:crimson
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 3px 4px;
+    vertical-align: middle;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    padding: 4px 2px;
+    border: 1px solid #7f9db9;
+    font-size: 12px;
+}
+
+textarea {
+    resize:horizontal;
+}

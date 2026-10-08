@@ -1,0 +1,183 @@
+<!--
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> <!-- let the page display special char correctly --&gt;
+        <meta name="viewport" content="width=device-width", initial-scale="1.0"> <!--viewport-scale properly on phone --&gt;
+        <title>Practise Form</title>
+      <!--<link rel="stylesheet" href="style.css">--&gt;  
+    </head>
+    <body>
+        ...   Hello, I am the body!  ...
+        <form action="#" method="post"> <!--form- is like a container,
+                                        action-"#"- tells browser there to send the form after user click the submit button
+                                        method="post": Tells the browser how to send the data--&gt;
+                          <level>Name:  </level> <input type="text" name="demo">
+                          <input type="submit" value="Send"><br>      
+                          
+                          <font color="red">*</font> - Denotes Required Info <br>
+                          <b>&gt; 1 Donation</b> &nbsp; &gt; 2 Confirmation &nbsp; &gt; Thanks!<br><br>
+                                        <!--<b>-bold text
+                                            &gt; - displays '>'' symbol
+                                            &nbsp; - is a non breaking space(miltiple spaces into one)
+                                             --&gt;
+                           <font color="green">Totlaa</font> -<b>Motla!!!!</b><br>
+                            <b>&gt;  <font color="blue"> 5 Donationsss</font>  &nbsp;  &gt; 9 confirmation!!!</b>   
+
+                            <h2 style="color: red; margin-top: 20px;">Donor Information</h2>
+
+                            <h1>Heading 1</h1>
+                            <h2>Heading 2</h2>
+                            <h2 style="color: red; margin-top: 2px;">Red Heading with big gap above</h2>
+                                                    <!--style --- css--&gt;
+
+                            <table>
+                                <tr>
+                                    <td align="right" width="30">Left side level  </td>
+                                    <td>right side input</td>
+                                </tr>
+                            </table>
+
+                            <table border="1">
+                                <tr>
+                                    <td align="right" width="70%">First Name:</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td align="right">Last Nameeeeeeeeeeeeeeeeeeee:</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                            </table>
+
+                            <table>
+                                <tr>
+                                    <td>statussssssss</td>
+                                    <td><input type="text">  </td>
+                                </tr>
+
+                                <tr>
+                                    <td>siuuu</td>
+                                    <td><input type="text">  </td>
+                                </tr>
+                            </table>
+                            <!--align is for center, right, left
+                            left isnt useful cz everything we write, starts from left    
+                            (valign is for top and bottom)
+
+                            border="1" to see the grid 
+                            <tr> is a table row
+                            <td> is a cell inside a row
+                            align="right" pushes the label text to the edge of its cell  
+                            width="30%" makes the label column take 30% of the table width      
+                            --&gt;
+
+                            <br><br>
+                            
+                            <label for="fname">First Name:</label>
+                            <input type="text" id="fname" name="fname" required><br><br>
+   
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required><br><br>
+
+                            <input type="submit">
+
+                            <select id="state" name="state" required>
+                                <option value="">Select a State</option>
+                                <option value="AL">Alabama</option>
+                                <option value="CA">California</option>
+                            </select>
+
+                            <select name="state" required>
+                                    <option value="">Select a State</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="CA">California</option>
+                                </select>
+                                <input type="submit">
+
+                                <input type="radio" id="50" name="amount" value="50"> <label for="50">$50</label>
+                                <input type="radio" id="75" name="amount" value="75"> <label for="75">$75</label>
+                                                                
+                                
+                                <input type="radio" id="none" name="amount" value="None" checked>
+                                <input type="checkbox" id="c1" name="contact" value="email"> <label for="c1">E-mail</label><br>
+                                <input type="checkbox" id="c2" name="contact" value="post"> <label for="c2">Postal Mail</label><br>
+                                <input type="checkbox" id="c3" name="contact" value="phone"> <label for="c3">Telephone</label><br>
+                                 <input type="submit">
+                                 
+                                 <br><br>
+                                 <textarea id="comments" name="comments" rows="4" style="width: 350px;"></textarea>
+<br>
+                                 <input type="reset" value="Reset">
+                                    <input type="submit" value="Continue"><br>
+
+                                    
+                                    <span class="hint-text">(Check a button or type in your amount)</span>
+                                    <p class="pub-instruction">Please enter your name...</p>
+                                    <p class="checkbox-group"> ... </p>
+                                    <p class="action-buttons"> ... </p>
+                                    <p class="footer-note">🔒 Donate online with confidence...</p>
+
+
+        </form>    
+    </body>
+</html>
+
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Test</title>
+    <link rel="stylesheet" href="Practise1(style).css">
+</head>
+<body>
+    <form>
+        <h2>Donor Information</h2>
+        <table border="1">
+            <tr>
+                <td align="right" width="30%"><label for="fname">First Name:</label></td>
+                <td><input type="text" id="fname"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="email">Email:</label></td>
+                <td><input type="email" id="email"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="state">State:</label></td>
+                <td>
+                    <select id="state">
+                        <option>Select a State</option>
+                        <option>Alabama</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right" valign="top"><label for="comments">Comments:</label></td>
+                <td>
+                    <span class="hint-text">(Please type any questions here)</span><br>
+                    <textarea id="comments" rows="3"></textarea>
+                </td>
+            </tr>
+        </table>
+
+        <p class="recurring-text">Monthly Credit Card $ <input type="text" style="width:60px;"> For <input type="text" style="width:40px;"> Months</p>
+
+        <p class="pub-instruction">Please enter your name as you would like it to appear:</p>
+
+        <p class="checkbox-group">
+            <input type="checkbox" id="a"> <label for="a">Remain anonymous.</label><br>
+            <input type="checkbox" id="b"> <label for="b">Employer offers matching gifts.</label>
+        </p>
+
+        <p class="action-buttons">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Continue">
+        </p>
+
+        <p class="footer-note">🔒 You are on a secure server.</p>
+        <p class="footer-note">Contact support if you have problems.</p>
+    </form>
+</body>
+</html>
